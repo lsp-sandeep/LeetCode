@@ -1,7 +1,9 @@
 import pandas as pd
 
 def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
-
+    '''
+    This function returns the nth highest salary from the employee table
+    '''
     ranked_salaries = (
         employee['salary']
         .sort_values(ascending= False)
